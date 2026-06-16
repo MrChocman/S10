@@ -1,6 +1,6 @@
 package graph;
 
-// 1. Añadimos el "extends Comparable" y el "implements Comparable"
+
 public class Edge<E extends Comparable<E>> implements Comparable<Edge<E>> { 
 
     private Vertex<E> vertex;

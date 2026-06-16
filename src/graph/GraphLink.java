@@ -8,12 +8,10 @@ import java.util.LinkedList;
 import java.util.PriorityQueue;
 import java.util.Queue;
 import java.util.Stack;
-
 import listlinked.ListLinked; 
 
 public class GraphLink<E extends Comparable<E>> { 
 
-    // CAMBIO 1: El "bolsillo" se llama 'vertices', y debe guardar objetos AdjList<E>
     private ListLinked<AdjList<E>> vertices; 
 
     public GraphLink() { 
@@ -22,12 +20,10 @@ public class GraphLink<E extends Comparable<E>> {
 
     public void insertVertex(E data) { 
         Vertex<E> vertex = new Vertex<>(data); 
-        // CAMBIO 2: Cambiamos la palabra 'graph' por 'vertices'
         vertices.insertLast(new AdjList<>(vertex)); 
     }
     
     private AdjList<E> findVertex(E data) { 
-        // CAMBIO 3: Cambiamos 'graph' por 'vertices', y 'size()' por 'length()'
         for(int i = 0; i < vertices.length(); i++) { 
             AdjList<E> adj = vertices.get(i); 
             if(adj.getVertex().getData().equals(data)) 
