@@ -2,7 +2,7 @@ package graph;
 
 import listlinked.ListLinked; 
 
-// Cambia la primera línea por esto:
+
 public class AdjList<E extends Comparable<E>> implements Comparable<AdjList<E>> { 
 
     private Vertex<E> vertex; 
