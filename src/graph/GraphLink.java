@@ -166,13 +166,11 @@ public class GraphLink<E extends Comparable<E>> {
     
         StringBuilder sb = new StringBuilder(); 
     
-        // CAMBIO 4: Cambiamos 'graph' por 'vertices', y 'size()' por 'length()'
         for(int i = 0; i < vertices.length(); i++) { 
     
             AdjList<E> adj = vertices.get(i); 
             sb.append(adj.getVertex()).append(" -> "); 
     
-            // CAMBIO 5: Cambiamos 'size()' por 'length()' para los Edges también
             for(int j = 0; j < adj.getEdges().length(); j++) { 
     
                 sb.append(adj.getEdges().get(j)).append(" "); 
