@@ -16,7 +16,7 @@ public class Vertex<E extends Comparable<E>> implements Comparable<Vertex<E>> {
         this.data = data; 
     } 
 
-    // 2. Implementamos el método obligatorio compareTo
+    // Implementamos el método obligatorio compareTo
     @Override
     public int compareTo(Vertex<E> other) {
         // Comparamos este vértice con otro basándonos en su dato interno
