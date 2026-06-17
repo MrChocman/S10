@@ -33,13 +33,9 @@ public class GraphLink<E extends Comparable<E>> {
         if(v1 == null || v2 == null) 
             return; 
 
-        v1.getEdges().insertLast( 
-            new Edge<>(v2.getVertex()) 
-        ); 
+        v1.getEdges().insertLast(new Edge<>(v2.getVertex())); 
 
-        v2.getEdges().insertLast( 
-            new Edge<>(v1.getVertex()) 
-        ); 
+        v2.getEdges().insertLast(new Edge<>(v1.getVertex())); 
     }
 
     // 1. INSERTAR ARISTA CON PESO (Grafo No Dirigido)

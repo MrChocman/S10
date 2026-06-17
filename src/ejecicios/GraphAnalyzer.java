@@ -157,8 +157,6 @@ public class GraphAnalyzer<V extends Comparable<V>, E> {
         return complement;
     }
 
-    // Utilidad: Convierte tu ListLinked personalizada a un ArrayList nativo para poder usar la API de Java 
-    // en los algoritmos complejos.
     private List<V> toJavaList(listlinked.ListLinked<V> customList) {
         List<V> list = new ArrayList<>();
         if (customList == null) return list;
@@ -168,4 +166,5 @@ public class GraphAnalyzer<V extends Comparable<V>, E> {
         }
         return list;
     }
+
 }
