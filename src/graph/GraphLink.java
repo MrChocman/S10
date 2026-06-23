@@ -138,7 +138,7 @@ public class GraphLink<E extends Comparable<E>> {
     public ArrayList<E> shortPath(E v, E z) {
         ArrayList<E> listaRuta = new ArrayList<>();
         
-        // ¡Reutilizamos el método Dijkstra para no repetir código!
+        
         Stack<E> pilaRuta = Dijsktra(v, z);
 
         // Vaciamos la pila en el ArrayList. 
